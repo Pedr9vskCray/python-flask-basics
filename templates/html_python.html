@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Template</title>
+    </head>
+    <body>
+        <h1>This is a HTML Template</h1>
+        {% for x in range(1, content) %}
+            {% if x % 2 == 0 %}
+                <p>even: {{x}}</p>
+            {% else %}
+                <p>odd: {{x}}</p>
+            {% endif %}
+        {% endfor %}
+    </body>
+</html>
