@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block title %}Login Page{% endblock %}
+
+{% block content %}
+<!-- Notice how when we first load this page we use a GET method, but after submitting this form we'll use a POST method -->
+<form action="#" method="post"> <!-- action="" is the URL we want to be redirected to, # means we will be redirected to the same page we are now -->
+    <label for="fname">First Name:</label><br>
+    <input type="text", id="fname" name="foo_data"><br>
+    <p><input type="submit" name="submit"></p>
+</form>
+{% endblock %}
+
+{% block body %}
+    <h1>Please submit your first name.</h1>
+{% endblock %}
